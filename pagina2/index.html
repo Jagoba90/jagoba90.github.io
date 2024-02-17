@@ -21,7 +21,7 @@
                         <button class="btn btn-outline-none" type="button" id="search-addon">
                             <i class="bi bi-search"></i>
                         </button>
-                        <input type="text" class="form-control-sm border-0 rounded-pill col-xl-8 col-8 fs-5" placeholder="Jagoba Barberan">
+                        <input type="text" class="form-control-sm border-0 rounded-pill col-xl-8 col-8 fs-5 formulario" placeholder="Jagoba Barberan">
                     </div>
                 </div>
 
@@ -82,41 +82,47 @@
                     <div class="col-xl-8 col-md-12 text-center d-flex justify-content-between m-auto gap-lg-4 gap-md-2 gap-2 mt-3">
 
                         <!--Primera historia-->
-                        <div class="card rounded-4 border-0 tarjeta " style="width: 8rem; height: 12rem;">
-                            <img src="images/persona1.jpg" class="card-img-top rounded-top-4" height="100%" alt="...">
+                        <div class="card rounded-4 border-0 tarjeta" style="width: 8rem; height: 12rem;">
+                            <div class="storie w-100 h-100 position-absolute rounded-4"></div>
+                            <img src="images/persona1.jpg" class="card-img-top rounded-top-4 " height="100%" alt="...">
                             <div class="p-xl-0 p-md-0">
                                 <p class="card-text piefoto rounded-bottom d-dm-block">Sortu <span class="d-none d-lg-inline">berria</span></p>
                             </div>
                         </div>
 
                         <!--Segunda historia-->
-                        <div class="card rounded-4 tarjeta border-0" style="width: 8rem; height: 12rem;">
+                        <div class="card rounded-4 tarjeta border-0 " style="width: 8rem; height: 12rem;">
+                            
                             <img src="images/paisaje2.jpg" class="card-img-top object-fit-cover rounded-4 " height="100%" alt="...">
+                            
                             <div class="card-img-overlay p-0 d-flex justify-content-end align-items-end">
                                 <span class="p-1 border border-3 border-white rounded-circle">
                                     <img src="images/persona2.jpg" width="60" height="60" class="rounded-circle" srcset="" >
                                 </span>
                             </div>
+                            <div class="storie w-100 h-100 position-absolute rounded-4"></div>
                         </div>
 
                         <!--Tercera historia-->
-                        <div class="card rounded-4 border-0 tarjeta " style="width: 8rem; height: 12rem;">
+                        <div class="card rounded-4 border-0 tarjeta storie" style="width: 8rem; height: 12rem;">
                             <img src="images/paisaje1.jpg" class="card-img-top object-fit-cover rounded-4 " height="100%" alt="...">
                             <div class="card-img-overlay p-0 d-flex justify-content-end align-items-end">
                                 <span class="p-1 border border-3 border-white rounded-circle">
                                     <img src="images/persona3.jpg" width="60" height="60" class="rounded-circle" srcset="">
                                 </span>
                             </div>
+                            <div class="storie w-100 h-100 position-absolute rounded-4"></div>
                         </div>
 
                         <!--Cuarta historia-->
-                        <div class="card rounded-4 tarjeta border-0 " style="width: 8rem; height: 12rem;">
+                        <div class="card rounded-4 tarjeta border-0 storie" style="width: 8rem; height: 12rem;">
                             <img src="images/ad1.jpg" class="card-img-top object-fit-cover rounded-4 " height="100%" alt="...">
                             <div class="card-img-overlay p-0 d-flex justify-content-end align-items-end">
                                 <span class="p-1 border border-3 border-white rounded-circle">
                                     <img src="images/persona4.jpg" width="60" height="60" class="rounded-circle" srcset="">
                                 </span>
                             </div>
+                            <div class="storie w-100 h-100 position-absolute rounded-4"></div>
                         </div>
                         <!--Fin div historias-->
                     </div>
@@ -126,7 +132,7 @@
                     <div class="col-xl-8 m-auto border border-3 rounded bordetarjeta p-3 mt-4 mb-4">
                        <div class="border-bottom col-xl-12 text-center ">
                             <img src="images/persona1.jpg" alt="" srcset="" class="rounded-circle d-inline-block mb-3 ms-0" width="70" height="70">
-                            <input type="text" class="border-0 rounded-pill col-xl-9 col-8 p-3 fw-bold d-inline-block mb-3 ms-3" placeholder="Zer darabilzu gogoan, Gorka?">
+                            <input type="text" class="border-0 rounded-pill col-xl-9 col-8 p-3 fw-bold d-inline-block mb-3 ms-3 formulario" placeholder="Zer darabilzu gogoan, Gorka?">
                        </div>
 
                        <div class="mb-1 mb-lg-0 mt-2 p-2">
@@ -157,8 +163,8 @@
                             <p class="fs-5 me-2 textopost pintar-mano">7 iruzkin</p>
                         </div>
                         <div class="d-flex justify-content-around mt-3 gap-3">
-                            <button class="p-xl-4 p-3 pruebamia col-6  pintar-boton"><i class="bi bi-hand-thumbs-up fs-5"><span class="d-none d-lg-inline">&emsp;Atsegin dut</span></i></button>
-                            <button class="p-xl-4 p-3 pruebamia col-6  pintar-boton"><i class="bi bi-chat fs-5"><span class="d-none d-lg-inline">&emsp;Iruzkindu</span></i></button>
+                            <button class="p-xl-3 p-3 pruebamia rounded col-6  pintar-boton"><i class="bi bi-hand-thumbs-up fs-5"><span class="d-none d-lg-inline">&emsp;Atsegin dut</span></i></button>
+                            <button class="p-xl-3 p-3 pruebamia rounded col-6  pintar-boton"><i class="bi bi-chat fs-5"><span class="d-none d-lg-inline">&emsp;Iruzkindu</span></i></button>
                         </div>
                      </div>
 
@@ -181,8 +187,8 @@
                             <p class="fs-5 me-2 textopost pintar-mano">3 iruzkin</p>
                         </div>
                         <div class="d-flex justify-content-around mt-3 gap-3">
-                            <button class="p-xl-4 pruebamia col-6 p-3 pintar-boton"><i class="bi bi-hand-thumbs-up fs-5"><span class="d-none d-lg-inline">&emsp;Atsegin dut</span></i></button>
-                            <button class="p-xl-4 pruebamia col-6 p-3 intar-boton"><i class="bi bi-chat fs-5"><span class="d-none d-lg-inline">&emsp;Iruzkindu</span></i></button>
+                            <button class=" pruebamia rounded col-6 p-3 pintar-boton"><i class="bi bi-hand-thumbs-up fs-5"><span class="d-none d-lg-inline">&emsp;Atsegin dut</span></i></button>
+                            <button class=" pruebamia rounded col-6 p-3 intar-boton"><i class="bi bi-chat fs-5"><span class="d-none d-lg-inline">&emsp;Iruzkindu</span></i></button>
                         </div>
                      </div>
 
