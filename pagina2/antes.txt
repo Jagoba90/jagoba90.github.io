@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIW 05 Jagoba</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/general.min.css">
+</head>
+<body>
+    <!--Header de la pagina con las 3 columnas-->
+    <header>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <!--Primera columna para el logo, el icono de la lupa y el input-->
+                <div class="col-xl-3 col-md-7 col-12 d-flex align-items-center">
+                    <img src="images/Logo_Birt.PNG" alt="" class="">
+                    <div class="input-group text-center d-flex align-items-center">
+                        <button class="btn btn-outline-none" type="button" id="search-addon">
+                            <i class="bi bi-search"></i>
+                        </button>
+                        <input type="text" class="form-control-sm border-0 rounded-pill col-xl-8 col-8 fs-5" placeholder="Bilatu">
+                    </div>
+                </div>
+
+                <!--Segunda columna para los iconos de la pagina-->
+                <div class="col-xl-6 col-md-12 col-12 order-xl-0 order-3 d-flex justify-content-xl-center align-items-center justify-content-around gap-4">
+                    <i class="bi bi-house-door-fill activo me-1 px-xl-4 p-2 "></i>
+                    <i class="bi bi-people me-1 px-xl-4 p-2 pintar-cuadrado rounded-2"></i>
+                    <i class="bi bi-collection-play me-1 px-xl-4 p-2 pintar-cuadrado rounded-2"></i>
+                    <i class="bi bi-shop me-1 px-xl-4 p-2 pintar-cuadrado rounded-2"></i>
+                    <i class="bi bi-upload me-1 px-xl-4 p-2 pintar-cuadrado rounded-2"></i>
+                </div>
+
+                <!--Tercera columna para los iconos, la foto y el nombre-->
+                <div class="col-xl-3 col-md-5 col-12 d-flex justify-content-xl-end align-items-center justify-content-center">
+                    <i class="bi bi-grid-3x3-gap-fill ms-2 p-3 pintar-redondo"></i>
+                    <i class="bi bi-messenger ms-2 p-3 pintar-redondo"></i>
+                    <i class="bi bi-bell-fill ms-2 p-3 pintar-redondo"></i>
+                    <div class="pintar-tarjeta d-flex align-items-center p-1 col-xl-3">
+                        <img src="images/persona1.jpg" alt="" srcset="" width="50" height="50" class="rounded-circle">
+                        <span class="ms-2 nombre">Gorka</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Contenido de la pagina-->
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <!--Primera columna para la foto y los diferentes enlaces-->
+                <div class="col-xl-3 col-md-3 p-4 ">
+                    <div class="d-flex align-items-center mb-3 ms-2 pintar-tarjeta col-xl-7">
+                        <img src="images/persona1.jpg" alt="" srcset="" width="70" height="70" class="rounded-circle me-3">
+                        <span class="me-2 nombre"><a href="#" class="fs-5 fw-bold nombre">Gorka zengotita</a></span>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 pintar-tarjeta col-xl-6 p-2 fs-5 nombre"><i class="bi bi-people fs-4 m-2"></i>Lagunak</li>
+                        <li class="mb-3 pintar-tarjeta col-xl-6 p-2 fs-5 nombre"><i class="bi bi-flag fs-5 m-2"></i>Orrialdeak</li>
+                        <li class="mb-3 pintar-tarjeta col-xl-6 p-2 fs-5 nombre"><i class="bi bi-collection fs-5 m-2"></i>Taldeak</li>
+                        <li class="mb-3 pintar-tarjeta col-xl-6 p-2 fs-5 nombre"><i class="bi bi-bag fs-5 m-2"></i>Azoka</li>
+                        <li class="mb-3 pintar-tarjeta col-xl-6 p-2 fs-5 nombre"><i class="bi bi-tv fs-5 m-2"></i>Watch</li>
+                        <li class="mb-3 pintar-tarjeta col-xl-6 p-2 fs-5 nombre"><i class="bi bi-calendar-event fs-5 m-2"></i>Ekitaldiak</li>
+                    </ul>
+                    <div class="col-xl-12 mt-3">
+                        <a href="" class="me-2 enlace">Pribatasuna</a>
+                        <a href="" class="me-2 enlace">Baldintzak</a>
+                        <a href="" class="me-2 enlace">Iragarkiak</a>
+                        <a href="" class="me-2 enlace">Iragarkien hobespenak</a>
+                        <a href="" class="me-2 enlace">Cookieak</a>
+                        <a href="" class="me-2 enlace">Gehiago</a>
+                    </div>
+                </div>
+                
+                <!--Segunda columna para las historias y todo el feed-->
+                <div class="col-xl-6 text-center ">
+                    <!--Div unicamente para la zona de las historias hechas con card-->
+                    <div class="historiasGente col-xl-8 text-center d-flex justify-content-between m-auto gap-4">
+
+                        <!--Primera historia-->
+                        <div class="card rounded-4 border-0 tarjeta">
+                            <img src="images/persona1.jpg" class="card-img-top rounded-top-4" height="100%" alt="...">
+                            <div class="card-body p-0">
+                                <p class="card-text piefoto rounded-bottom">Sortu berria</p>
+                            </div>
+                        </div>
+
+                        <!--Segunda historia-->
+                        <div class="card rounded-4 tarjeta border-0 ">
+                            <img src="images/paisaje2.jpg" class="card-img-top object-fit-cover rounded-4 " height="100%" alt="...">
+                            <div class="card-img-overlay p-0 d-flex justify-content-end align-items-end">
+                                <span class="p-1 border border-3 border-white rounded-circle">
+                                    <img src="images/persona2.jpg" width="60" height="60" class="rounded-circle" srcset="" >
+                                </span>
+                            </div>
+                        </div>
+
+                        <!--Tercera historia-->
+                        <div class="card rounded-4 border-0 tarjeta ">
+                            <img src="images/paisaje1.jpg" class="card-img-top object-fit-cover rounded-4 " height="100%" alt="...">
+                            <div class="card-img-overlay p-0 d-flex justify-content-end align-items-end">
+                                <span class="p-1 border border-3 border-white rounded-circle">
+                                    <img src="images/persona3.jpg" width="60" height="60" class="rounded-circle" srcset="">
+                                </span>
+                            </div>
+                        </div>
+
+                        <!--Cuarta historia-->
+                        <div class="card rounded-4 tarjeta border-0 ">
+                            <img src="images/ad1.jpg" class="card-img-top object-fit-cover rounded-4 " height="100%" alt="...">
+                            <div class="card-img-overlay p-0 d-flex justify-content-end align-items-end">
+                                <span class="p-1 border border-3 border-white rounded-circle">
+                                    <img src="images/persona4.jpg" width="60" height="60" class="rounded-circle" srcset="">
+                                </span>
+                            </div>
+                        </div>
+                        <!--Fin div historias-->
+                    </div>
+                    <!--contenido central del feed-->
+
+                    <!--Primera parte donde aparece la foto y un input con cosas debajo-->
+                    <div class="col-xl-8 m-auto border border-info p-3 mt-3">
+                       <div class="border-bottom col-xl-12 text-center ">
+                            <img src="images/persona1.jpg" alt="" srcset="" class="rounded-circle d-inline-block mb-3 ms-0" width="70" height="70">
+                            <input type="text" class="border-0 rounded-pill col-xl-10 col-8 p-3 fw-bold d-inline-block mb-3 ms-3" placeholder="Zer darabilzu gogoan, Gorka?">
+                       </div>
+
+                       <div class="mb-1 mt-2 p-2">
+                            <div class="d-flex justify-content-around">
+                                <i class="bi bi-camera-video fs-1 d-flex me-2 mt-2"><p class="fs-5 mt-1">&emsp;Zuzeneko bideoa</p></i>
+                                <i class="bi bi-images fs-1 d-flex me-2 mt-2"><p class="fs-5 mt-1">&emsp;Argazkiak</p></i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <img src="images/ad2.jpg" alt="" srcset="" class="mb-5 img-fluid">
+                    <img src="images/ad2.jpg" alt="" srcset="" class="mb-5 img-fluid">
+                    <img src="images/ad2.jpg" alt="" srcset="" class="mb-5 img-fluid">
+                    <img src="images/ad2.jpg" alt="" srcset="" class="mb-5 img-fluid">
+                    <img src="images/ad2.jpg" alt="" srcset="" class=" img-fluid">
+                </div>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!--Tercera columna con los contactos y demas-->
+                <div class="col-xl-3">
+                    <h5>Kontaktuak</h5>
+                    <div class="d-flex align-items-center mb-3 ms-2 pintar-tarjeta col-xl-7">
+                        <img src="images/persona2.jpg" alt="" srcset="" width="70" height="70" class="rounded-circle me-3 border border-primary">
+                        <span class="me-2 nombre"><a href="#" class="fs-5 fw-bold nombre">Iker Arana</a></span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3 ms-2 pintar-tarjeta col-xl-7">
+                        <img src="images/persona3.jpg" alt="" srcset="" width="70" height="70" class="rounded-circle me-3 border border-primary">
+                        <span class="me-2 nombre"><a href="#" class="fs-5 fw-bold nombre">Jaione Perez</a></span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3 ms-2 pintar-tarjeta col-xl-7">
+                        <img src="images/persona4.jpg" alt="" srcset="" width="70" height="70" class="rounded-circle me-3 border border-primary">
+                        <span class="me-2 nombre"><a href="#" class="fs-5 fw-bold nombre">Mikel Ardanza</a></span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3 ms-2 pintar-tarjeta col-xl-7">
+                        <img src="images/persona5.jpg" alt="" srcset="" width="70" height="70" class="rounded-circle me-3 border border-primary">
+                        <span class="me-2 nombre"><a href="#" class="fs-5 fw-bold nombre">Itziar Gortazar</a></span>
+                    </div>
+
+                    <h5>Taldeak</h5>
+                    <div class="d-flex align-items-center mb-3 ms-2 pintar-tarjeta col-xl-7">
+                        <img src="images/DAM.png" alt="" srcset="" width="70" height="70" class="rounded-circle me-3 border border-primary">
+                        <span class="me-2 nombre"><a href="#" class="fs-5 fw-bold nombre">DAM</a></span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3 ms-2 pintar-tarjeta col-xl-7">
+                        <img src="images/DAW.png" alt="" srcset="" width="70" height="70" class="rounded-circle me-3 border border-primary">
+                        <span class="me-2 nombre"><a href="#" class="fs-5 fw-bold nombre">DAW</a></span>
+                    </div>
+
+                    <h5>Basbestua</h5>
+                    <img src="images/ad2.jpg" alt="" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIW 05 Jagoba</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/general.min.css">
+</head>
+<body>
+    <!--Header de la pagina con las 3 columnas-->
+    <header>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <!--Primera columna para el logo, el icono de la lupa y el input-->
+                <div class="col-xl-3 col-md-7 col-12 d-flex align-items-center">
+                    <img src="images/Logo_Birt.PNG" alt="" class="">
+                    <div class="input-group text-center d-flex align-items-center">
+                        <button class="btn btn-outline-none" type="button" id="search-addon">
+                            <i class="bi bi-search"></i>
+                        </button>
+                        <input type="text" class="form-control-sm border-0 rounded-pill col-xl-8 col-8 fs-5" placeholder="Bilatu">
+                    </div>
+                </div>
+
+                <!--Segunda columna para los iconos de la pagina-->
+                <div class="col-xl-6 col-md-12 col-12 order-xl-0 order-3 d-flex justify-content-xl-center align-items-center justify-content-around gap-4">
+                    <i class="bi bi-house-door-fill activo me-1 px-xl-4 p-2 "></i>
+                    <i class="bi bi-people me-1 px-xl-4 p-2 pintar-cuadrado rounded-2"></i>
+                    <i class="bi bi-collection-play me-1 px-xl-4 p-2 pintar-cuadrado rounded-2"></i>
+                    <i class="bi bi-shop me-1 px-xl-4 p-2 pintar-cuadrado rounded-2"></i>
+                    <i class="bi bi-upload me-1 px-xl-4 p-2 pintar-cuadrado rounded-2"></i>
+                </div>
+
+                <!--Tercera columna para los iconos, la foto y el nombre-->
+                <div class="col-xl-3 col-md-5 col-12 d-flex justify-content-xl-end align-items-center justify-content-center">
+                    <i class="bi bi-grid-3x3-gap-fill ms-2 p-3 pintar-redondo"></i>
+                    <i class="bi bi-messenger ms-2 p-3 pintar-redondo"></i>
+                    <i class="bi bi-bell-fill ms-2 p-3 pintar-redondo"></i>
+                    <div class="pintar-tarjeta d-flex align-items-center p-1 col-xl-3">
+                        <img src="images/persona1.jpg" alt="" srcset="" width="50" height="50" class="rounded-circle">
+                        <span class="ms-2 nombre">Gorka</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Contenido de la pagina-->
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <!--Primera columna para la foto y los diferentes enlaces-->
+                <div class="col-xl-3 col-md-3 col-sm-3 p-4 d-none d-sm-inline">
+                    <div class="d-flex align-items-center mb-3 ms-xl-2 pintar-tarjeta col-xl-7">
+                        <img src="images/persona1.jpg" alt="" srcset="" width="70" height="70" class="rounded-circle me-3">
+                        <span class="me-2 nombre"><a href="#" class="fs-5 fw-bold nombre">Gorka zengotita</a></span>
+                    </div>
+                    <ul class="list-unstyled">
+                        <li class="mb-3 pintar-tarjeta col-xl-6 p-2 fs-5 nombre"><i class="bi bi-people fs-4 m-2"></i>Lagunak</li>
+                        <li class="mb-3 pintar-tarjeta col-xl-6 p-2 fs-5 nombre"><i class="bi bi-flag fs-5 m-2"></i>Orrialdeak</li>
+                        <li class="mb-3 pintar-tarjeta col-xl-6 p-2 fs-5 nombre"><i class="bi bi-collection fs-5 m-2"></i>Taldeak</li>
+                        <li class="mb-3 pintar-tarjeta col-xl-6 p-2 fs-5 nombre"><i class="bi bi-bag fs-5 m-2"></i>Azoka</li>
+                        <li class="mb-3 pintar-tarjeta col-xl-6 p-2 fs-5 nombre"><i class="bi bi-tv fs-5 m-2"></i>Watch</li>
+                        <li class="mb-3 pintar-tarjeta col-xl-6 p-2 fs-5 nombre"><i class="bi bi-calendar-event fs-5 m-2"></i>Ekitaldiak</li>
+                    </ul>
+                    <div class="col-xl-12 mt-3">
+                        <a href="" class="me-2 enlace">Pribatasuna</a>
+                        <a href="" class="me-2 enlace">Baldintzak</a>
+                        <a href="" class="me-2 enlace">Iragarkiak</a>
+                        <a href="" class="me-2 enlace">Iragarkien hobespenak</a>
+                        <a href="" class="me-2 enlace">Cookieak</a>
+                        <a href="" class="me-2 enlace">Gehiago</a>
+                    </div>
+                </div>
+                
+                <!--Segunda columna para las historias y todo el feed-->
+                <div class="col-xl-6 text-center col-md-6 mx-md-3">
+                    <!--Div unicamente para la zona de las historias hechas con card-->
+                    <div class="col-xl-8 col-md-12 text-center d-flex justify-content-between m-auto gap-4">
+
+                        <!--Primera historia-->
+                        <div class="card rounded-4 border-0 tarjeta w-25">
+                            <img src="images/persona1.jpg" class="card-img-top rounded-top-4" height="100%" alt="...">
+                            <div class="card-body p-xl-0 p-md-0">
+                                <p class="card-text piefoto rounded-bottom d-dm-block">Sortu <span class="d-none d-lg-inline">berria</span></p>
+                            </div>
+                        </div>
+
+                        <!--Segunda historia-->
+                        <div class="card rounded-4 tarjeta border-0 w-25">
+                            <img src="images/paisaje2.jpg" class="card-img-top object-fit-cover rounded-4 " height="100%" alt="...">
+                            <div class="card-img-overlay p-0 d-flex justify-content-end align-items-end">
+                                <span class="p-1 border border-3 border-white rounded-circle">
+                                    <img src="images/persona2.jpg" width="60" height="60" class="rounded-circle" srcset="" >
+                                </span>
+                            </div>
+                        </div>
+
+                        <!--Tercera historia-->
+                        <div class="card rounded-4 border-0 tarjeta w-25">
+                            <img src="images/paisaje1.jpg" class="card-img-top object-fit-cover rounded-4 " height="100%" alt="...">
+                            <div class="card-img-overlay p-0 d-flex justify-content-end align-items-end">
+                                <span class="p-1 border border-3 border-white rounded-circle">
+                                    <img src="images/persona3.jpg" width="60" height="60" class="rounded-circle" srcset="">
+                                </span>
+                            </div>
+                        </div>
+
+                        <!--Cuarta historia-->
+                        <div class="card rounded-4 tarjeta border-0 w-25">
+                            <img src="images/ad1.jpg" class="card-img-top object-fit-cover rounded-4 " height="100%" alt="...">
+                            <div class="card-img-overlay p-0 d-flex justify-content-end align-items-end">
+                                <span class="p-1 border border-3 border-white rounded-circle">
+                                    <img src="images/persona4.jpg" width="60" height="60" class="rounded-circle" srcset="">
+                                </span>
+                            </div>
+                        </div>
+                        <!--Fin div historias-->
+                    </div>
+                    <!--contenido central del feed-->
+
+                    <!--Primera parte donde aparece la foto y un input con cosas debajo-->
+                    <div class="col-xl-8 m-auto border border-3 rounded bordetarjeta p-3 mt-4 mb-4">
+                       <div class="border-bottom col-xl-12 text-center ">
+                            <img src="images/persona1.jpg" alt="" srcset="" class="rounded-circle d-inline-block mb-3 ms-0" width="70" height="70">
+                            <input type="text" class="border-0 rounded-pill col-xl-9 col-8 p-3 fw-bold d-inline-block mb-3 ms-3" placeholder="Zer darabilzu gogoan, Gorka?">
+                       </div>
+
+                       <div class="mb-1 mb-lg-0 mt-2 p-2">
+                            <div class="d-flex justify-content-around gap-2">
+                                <i class="bi bi-camera-video fs-xl-4 d-flex pintar-tarjeta-feed align-items-center justify-content-center col-xl-6 fs-md-2 mt-lg-0 my-md-3 my-lg-0"><p class="fs-5 mt-3 d-md-none d-lg-flex">&emsp;Zuzeneko bideoa</p></i>
+                                <i class="bi bi-images fs-xl-4 d-flex  pintar-tarjeta-feed align-items-center justify-content-center col-xl-6 fs-lg-2 mt-lg-0 my-md-3 my-lg-0"><p class="fs-5 mt-3 d-md-none d-lg-flex">&emsp;Argazkiak</p></i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-8 m-auto border border-3 rounded bordetarjeta p-3 mt-3 mb-4">
+                        <div class="d-flex align-items-center mb-3 ms-2 col-xl-7">
+                            <img src="images/persona3.jpg" alt="" srcset="" width="70" height="70" class="rounded-circle me-3">
+                            <div>
+                                <span class="me-2 nombre persona"><a href="#" class="fw-bold nombre">Jaione Perez</a></span>
+                                <span class="d-flex"><a href="#" class="persona">Ordu 1</a></span>
+                            </div>
+                        </div>
+                        <span class="d-flex textopost">Lorem ipsum dolor sit amet.</span>
+                        
+
+                        <div class=" d-flex justify-content-center mt-3 mb-3">
+                             <img src="images/paisaje1.jpg" alt="" srcset="" width="500px" class="img-fluid w-100">
+                         </div>
+                         <div class="d-flex justify-content-between">
+                            <i class="bi bi-hand-thumbs-up-fill fs-5 pintar-mano">&emsp;60</i>
+                            <p class="fs-5 me-2 textopost pintar-mano">7 iruzkin</p>
+                        </div>
+                        <div class="d-flex justify-content-around mt-3 gap-3">
+                            <button class="p-xl-4 p-3 pruebamia col-6  pintar-boton"><i class="bi bi-hand-thumbs-up fs-5 ">&emsp;Atsegin dut</i></button>
+                            <button class="p-xl-4 p-3 pruebamia col-6  pintar-boton"><i class="bi bi-chat fs-5">&emsp;Iruzkindu</i></button>
+                        </div>
+                     </div>
+
+                     <div class="col-xl-8 m-auto border border-3 rounded bordetarjeta p-3 mt-3 mb-4">
+                        <div class="d-flex align-items-center mb-3 ms-2 col-xl-7">
+                            <img src="images/persona2.jpg" alt="" srcset="" width="70" height="70" class="rounded-circle me-3">
+                            <div>
+                                <span class="me-2 nombre persona"><a href="#" class="fw-bold nombre">Iker Arana</a></span>
+                                <span class="d-flex"><a href="#" class="persona">2 Ordu</a></span>
+                            </div>
+                        </div>
+                        <span class="d-flex textopost">Lorem ipsum dolor sit amet.</span>
+                        
+
+                        <div class=" d-flex justify-content-center mt-3 mb-3">
+                             <img src="images/paisaje2.jpg" alt="" srcset="" width="500px" class="img-fluid w-100">
+                         </div>
+                         <div class="d-flex justify-content-between">
+                            <i class="bi bi-hand-thumbs-up-fill fs-5 pintar-mano">&emsp;75</i>
+                            <p class="fs-5 me-2 textopost pintar-mano">3 iruzkin</p>
+                        </div>
+                        <div class="d-flex justify-content-around mt-3 gap-3">
+                            <button class="p-xl-4 pruebamia col-6 p-3 pintar-boton"><i class="bi bi-hand-thumbs-up fs-5">&emsp;Atsegin dut</i></button>
+                            <button class="p-xl-4 pruebamia col-6 p-3 intar-boton"><i class="bi bi-chat fs-5">&emsp;Iruzkindu</i></button>
+                        </div>
+                     </div>
+
+                </div>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <!--Tercera columna con los contactos y demas-->
+                <div class="col-xl-2 col-md-2">
+                    <h5 class="nombre fw-bold mb-3">Kontaktuak</h5>
+                    <div class="d-flex align-items-center my-4 ms-xl-3 pintar-tarjeta col-xl-7">
+                        <img src="images/persona2.jpg" alt="" srcset="" width="50" height="50" class="rounded-circle me-3 border border-primary">
+                        <span class="me-2 nombre"><a href="#" class="fs-5 nombre">Iker Arana</a></span>
+                    </div>
+                    <div class="d-flex align-items-center my-4 ms-xl-3 pintar-tarjeta col-xl-7">
+                        <img src="images/persona3.jpg" alt="" srcset="" width="50" height="50" class="rounded-circle me-3 border border-primary">
+                        <span class="me-2 nombre"><a href="#" class="fs-5 nombre">Jaione Perez</a></span>
+                    </div>
+                    <div class="d-flex align-items-center my-4 ms-xl-3 pintar-tarjeta col-xl-7">
+                        <img src="images/persona4.jpg" alt="" srcset="" width="50" height="50" class="rounded-circle me-3 border border-primary">
+                        <span class="me-2 nombre"><a href="#" class="fs-5 nombre">Mikel Ardanza</a></span>
+                    </div>
+                    <div class="d-flex align-items-center my-4 ms-xl-3 pintar-tarjeta col-xl-7">
+                        <img src="images/persona5.jpg" alt="" srcset="" width="50" height="50" class="rounded-circle me-3 border border-primary">
+                        <span class="me-2 nombre"><a href="#" class="fs-5 nombre">Itziar Gortazar</a></span>
+                    </div>
+
+                    <h5 class="nombre fw-bold mt-4 mb-3">Taldeak</h5>
+                    <div class="d-flex align-items-center my-4 ms-xl-3 pintar-tarjeta col-xl-7">
+                        <img src="images/DAM.png" alt="" srcset="" width="50" height="50" class="rounded-circle me-3 border border-primary">
+                        <span class="me-2 nombre"><a href="#" class="fs-5 nombre">DAM</a></span>
+                    </div>
+                    <div class="d-flex align-items-center my-4 ms-xl-3 pintar-tarjeta col-xl-7">
+                        <img src="images/DAW.png" alt="" srcset="" width="50" height="50" class="rounded-circle me-3 border border-primary">
+                        <span class="me-2 nombre"><a href="#" class="fs-5 nombre">DAW</a></span>
+                    </div>
+
+                    <h5 class="nombre fw-bold mb-3">Basbestua</h5>
+                    <img src="images/ad2.jpg" alt="" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
+</body>
+</html>

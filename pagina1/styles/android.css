@@ -1,0 +1,152 @@
+#filtro{
+    width: 70%;
+    margin: 3em auto 3em;
+}
+
+#filtro ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+/*
+#filtro ul li{
+    border: 1px solid black;
+    font-size: 32px;
+    color: white;
+    background-color: #586070;
+    padding: 1%;
+    border-radius: 25px;
+    
+}
+*/
+
+#filtro ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+#contenido-princ{
+    width: 78%;
+    border-top: 1px solid rgba(128, 128, 128, 0.37);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+/*
+    El CSS para las tarjetas igual lo puedo meter en otro css a parte para usarlo tambien 
+    con la parte de iphone ya que las tarjetas son iguales
+*/
+.tarjeta{
+    background-color: #7c859b;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    height: fit-content;
+    margin: 10px auto;
+    gap: 2rem;
+    border-radius: 25px;
+    padding: 1.5rem;
+}
+
+.imagen-tarjeta{
+    max-width: 100%;
+    margin: auto;
+}
+
+.imagen-tarjeta img{
+    width: 100%;
+}
+
+.datos-tarjeta h2{
+    margin-bottom: 1.1rem;
+}
+
+.datos-tarjeta p{
+    text-align: left;
+    line-height: 2em;
+    font-size: 1.1rem;
+}
+
+.datos-tarjeta span{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 1.2rem;
+}
+/*
+.datos-tarjeta span a{
+    color: white;
+    padding: 10px;
+    font-size: 26px;
+    border-radius: 20px;
+    background-color: #404757;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+*/
+
+.datos-tarjeta span a{
+    width: 130px;
+}
+
+.boton-pulsable{
+    border-radius: 20px;
+    background-color: #586070;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 26px;
+    color: white;
+    padding: 2%;
+}
+
+.boton-pulsable:hover{
+    background-color: #6a7691;
+    color: #404757;
+    box-shadow: 3px 6px 10px rgb(110, 80, 82);
+}
+
+.imagen-tarjeta img:hover{
+    opacity: 0.5;
+}
+
+
+@media screen 
+and (min-device-width : 390px) 
+and (max-device-width: 900px) {
+    #filtro ul{
+        display: block;
+    }
+
+    #contenido-princ{
+            display: block;
+    }
+    
+    .tarjeta{
+        display: block;
+    }
+
+    .boton-pulsable {
+        font-size: 1.4rem;
+    }
+
+    .imagen-tarjeta img{
+        width: 25vw;
+    }
+
+    .tarjeta{
+        margin: 2rem auto 1rem;
+    }
+
+}
+
+@media screen 
+and (min-device-width : 431px) 
+and (max-device-width: 900px) {
+    .imagen-tarjeta img{
+        width: 30vw;
+    }
+}

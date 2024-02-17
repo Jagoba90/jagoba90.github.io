@@ -1,0 +1,268 @@
+/* 
+En esta hoja estan todos los estilos que se comparten entre las diferentes paginas.
+Por ejemplo la cabecera y el footer entre otras cosas.
+El resto de estilos propios de cada pagina estan en su propio archivo css nombrado como la pagina.
+*/
+
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:content-box;
+}
+
+body{
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    background-color: #ffffff;
+}
+
+/*Estilos para la cabecera de las diferentes paginas*/
+#cabecera{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#imagen-birt{
+    width: 7vw;
+}
+
+#imagen-birt:hover{
+    opacity: 60%;
+}
+
+nav{
+    min-width: 60%;
+}
+
+#lista-menus{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.enlace-web{
+    text-decoration: none;
+    color: #1B2328;
+}
+
+.enlace-web:hover{
+    color: black;
+    font-weight: bold;
+}
+
+aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 15%;
+}
+
+.icono{
+    width: 2.5vw;
+}
+
+/*Estilos para las imagenes principales de la web*/
+.imagen-principal{
+    margin-top: 2rem;
+    width: 62vw;
+    height: 40vh;
+}
+
+/*Marcar en que pagina se está en ese momento*/
+.actual{
+    font-weight: bold;
+}
+
+/*Estilos para el footer*/
+footer{
+    width: 62vw;
+    margin: 1.9rem auto;   
+}
+
+/*contenedor para la imagen del footer y texto*/
+.imagen-texto{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+}
+
+.imagen-texto img{
+    width: 100%;
+    height: 40vh;
+    margin: auto;
+}
+
+#foto-footer-contacta{
+    width: 100%;
+}
+
+.imagen-texto h2{
+    position: absolute;
+    font-size: 3.12rem;
+    bottom: 1em;
+}
+
+/*Estilos para el contenedor donde estan las RRSS y condiciones*/
+#fin-pagina{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: auto;
+    margin-top: 2rem;
+}
+
+#fin-pagina ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#lista-iconos{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.icono-red-social{
+    width: 1.5vw;
+    height: 3vh;
+    margin-right: 1.5rem;
+}
+
+.icono-red-social:hover, .icono:hover{
+    transform: scale(1.5);
+}
+
+#condiciones{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#condiciones li{
+    margin-right: 15px;
+    font-size: 1.2em;
+}
+
+/*Hover para las imagenes de los footer y de los moviles del index*/
+#imagenfooter:hover, .imagen-dispositivo:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/*Letras de titulos y diferentes apartados con color gris*/
+.color-gris{
+    color: #343c40;
+    font-size: 3rem;
+}
+
+/*Estilos para movil y tablet*/
+@media screen 
+and (min-device-width : 360px) 
+and (max-device-width: 900px) {
+    html, body {
+        max-width: 100%;
+        width: 90%;
+        margin: auto;
+    }
+
+    header{
+        flex-wrap: wrap;
+    }
+
+    #cabecera{
+        max-width: 100%;
+    }
+    
+    nav{
+        order: 2;
+        margin: 1rem auto;
+        border-bottom: 1px solid rgba(116, 116, 116, 0.726);
+        border-top: 1px solid rgba(116, 116, 116, 0.726);
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #imagen-birt{
+        width: 30vw;
+    }
+    
+    #lista-menus{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav li{
+        margin-top: .5rem;
+    }
+
+    aside{
+        order: 1;
+        width: 40%;
+        margin-left: 5vw;
+    }
+
+    .icono{
+        width: 8vw;
+    }
+
+    .color-gris{
+        max-width: 80%;
+        font-size: 2rem;
+        text-align: center;
+        margin: 1.5rem auto;
+    }
+
+    .imagen-principal{
+        max-width: 100%;
+        height: 15vh;
+    }
+
+    .imagen-texto{
+        width: 100%;
+    }
+
+    #imagenfooter{
+        width: 100%;
+        height: 20vh;
+    }
+
+    .imagen-texto h2{
+        font-size: 2rem;
+        bottom: 50%;
+        color: black;
+    }
+
+    #fin-pagina{
+        display: block;
+    }
+
+    .icono-red-social{
+        width: 6vw;
+        margin-right: .9rem;
+    }
+
+    #condiciones{  
+        margin-top: 0px;
+        font-size: .5rem;
+    }
+
+    #condiciones li{
+        margin-right: 0;
+        text-align: center;
+        margin: 1rem;
+    }
+}
+

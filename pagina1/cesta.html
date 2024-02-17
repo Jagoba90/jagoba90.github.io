@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compra - Birt Mobile</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/cesta.css">
+</head>
+<body>
+    <!--Cabecera comun para todas las paginas con los diferentes menús-->
+    <header id="cabecera">
+        <a href="index.html"><img src="images/logotipo.png" alt="Logotipo Birt" id="imagen-birt"></a>
+        <nav>
+            <ul id="lista-menus">
+                <li><a href="android.html" class="enlace-web">Android</a></li>
+                <li><a href="iphone.html" class="enlace-web">iPhone</a></li>
+                <li><a href="comparador.html" class="enlace-web">Comparador</a></li>
+                <li><a href="contacta.html" class="enlace-web">Contactanos</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <a href="cesta.html">
+                <img src="images/cesta.png" alt="Carrito de la cesta" srcset="" id="carro-compra" class="icono">
+            </a>
+            <a href="#">
+                <img src="images/idioma.png" alt="Selector de idioma" srcset="" id="selector-idioma" class="icono">
+            </a>
+        </aside>
+    </header>
+    <!--Imagen principal de la pagina y frase de la pagina-->
+    <section>
+        <img src="images/tienda.jpg" alt="imagen principal pagina" srcset="" class="imagen-principal">
+        <h1 class="color-gris">Productos añadidos a la cesta</h1>
+    </section>
+    <!--Listado de dispositivos añadidos a la cesta-->
+    <section class="contenido">
+        <table>
+            <thead id="cabecera-tabla">
+                <tr>
+                    <td> </td>
+                    <td>Producto</td>
+                    <td>Cantidad</td>
+                    <td>Precio</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="images/android_movil.png" alt="movil android"></td>
+                    <td>Movil Android</td>
+                    <td class="cantidad">x1</td>
+                    <td class="precio">1200€</td>
+                </tr>
+                <tr>
+                    <td><img src="images/iphone_articulo.png" alt="movil iphone"></td>
+                    <td>Movil iPhone</td>
+                    <td class="cantidad">x1</td>
+                    <td class="precio">1000€</td>
+                </tr>
+                <tr>
+                    <td><img src="images/iphone_articulo.png" alt="movil iphone"></td>
+                    <td>Movil iPhone</td>
+                    <td class="cantidad">x1</td>
+                    <td class="precio">1000€</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--Precio total de los productos añadidos a la cesta-->
+        <h2 class="total">Precio total: 3200€</h2>
+    </section>
+    <!--Footer diferente al resto de paginas-->
+    <footer id="footer-diferente"> 
+        <div id="fin-pagina">
+            <ul id="lista-iconos">
+                <li><img src="images/tik-tok.png" alt="red tiktok" srcset="" class="icono-red-social"></li>
+                <li><img src="images/twitter.png" alt="red twitter" srcset="" class="icono-red-social"></li>
+                <li><img src="images/facebook.png" alt="red facebook" srcset="" class="icono-red-social"></li>
+                <li><img src="images/youtube.png" alt="red youtube" srcset="" class="icono-red-social"></li>
+                <li><img src="images/instagram.png" alt="red instagram" srcset="" class="icono-red-social"></li>
+            </ul>
+
+            <ul id="condiciones">
+                <a href="#" class="enlace-web"><li>privacidad</li></a>
+                <a href="#" class="enlace-web"><li>condiciones de venta</li></a>
+                <a href="#" class="enlace-web"><li>terminos del servicio</li></a>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

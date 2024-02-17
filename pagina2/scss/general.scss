@@ -1,0 +1,128 @@
+@use 'colors' as *;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    background-color: $secundario;
+    &::placeholder{
+        color: $principal;
+    }
+}
+
+.piefoto{
+    background-color: $secundario;
+    color: $principal;
+    font-weight: bold;
+    
+}
+
+.bi{
+    color: $principal;
+    font-size: 2rem;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.activo{
+    border-bottom: 0.3rem solid $principal ;
+}
+
+.pintar-cuadrado{
+    &:hover{
+        background-color: $principal;
+        color: white;
+        height: 100%;
+    }
+}
+
+.pintar-redondo{
+    &:hover{
+        background-color: $principal;
+        color: white;
+        width: 75px;
+        height: 75px;
+        border-radius:100px;
+    }
+}
+.pintar-tarjeta:hover{
+    background-color: $principal;
+    border-radius: 2rem;
+    color: white;
+    padding: 0.3rem;
+    .nombre, i{
+        color: white;
+    }
+}
+
+.pintar-tarjeta-feed:hover{
+    background-color: $principal;
+    border-radius: 1rem;
+    color: white;
+}
+
+.nombre, .enlace, .textopost{
+    color: $principal;
+    text-decoration: none;
+}
+
+.enlace{
+    font-size: 0.9rem;
+    &:hover{
+        transition: all 0.1s;
+        font-weight: bold;
+    }
+}
+
+.bordejago{
+    border: 1px solid green;
+}
+
+ .tarjeta{
+     width: 20%; 
+     height: 10rem;
+     &:hover{
+        cursor: pointer;
+     }
+ }
+// .clasemia{
+//     height: 3rem !important;
+//     margin-top: 0.6rem;
+// }
+
+.bordetarjeta{
+    border-color: $secundario !important;
+}
+
+.pruebamia{
+    background-color: $secundario;
+    color: $principal;
+    border: none;
+    border-radius: 1rem;
+}
+
+.persona{
+    text-decoration: none;
+    color: $principal;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.pintar-mano:hover{
+    background-color: $principal;
+    border-radius: 2rem;
+    padding: 0.6rem;
+    color: white;
+}
+
+.pintar-boton:hover{
+    background-color: $principal;
+    color: white;
+    i{
+        color: white;
+    }
+}
+

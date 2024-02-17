@@ -1,0 +1,80 @@
+/*Estilos para la cesta de compra*/
+
+h1{
+    margin: 2rem auto 3rem;
+}
+
+/* Estilos para el contenedor de la tabla y el h2*/
+.contenido{
+    margin-top: 2rem;
+    border-bottom: 1px solid grey;
+}
+
+/* Estilos para la tabla que muestra los productos añadidos */
+table{
+    width: 50%;
+    margin: auto;
+    padding: 1.3rem;
+}
+
+table img{
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    margin: auto;
+}
+
+thead{
+    font-weight: bold;
+}
+
+td, th{
+    width: 30%;
+}
+
+.cantidad, .precio{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/*Estilo para el h2 que muestra el mensaje de precio total*/
+.total{
+    width: 50%;
+    margin: auto;
+    text-align: right;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+/*Version tablet y movil*/
+@media screen 
+and (min-device-width : 360px) 
+and (max-device-width: 900px) {
+    .contenido{
+        justify-content: center;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    table img{
+        width: 7rem;
+    }
+
+    /*Estilo para el h2 donde aparece el total*/
+    .total{
+        text-align: center;
+        width: 80%;
+        line-height: 3rem;
+    }
+}
+
+/*estilo para la tabla tabla unicamente para el movil*/
+@media screen 
+and (min-device-width : 360px) 
+and (max-device-width: 410px) {
+    table{
+        padding: 0;
+    }
+}

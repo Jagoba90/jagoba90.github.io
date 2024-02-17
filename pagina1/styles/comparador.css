@@ -1,0 +1,79 @@
+/*Estilos para la pagina del comparador*/
+
+.imagen-principal{
+    width: 16%;
+    height: auto;
+    margin-bottom: 2.5rem;
+}
+h1{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    
+}
+
+/*Estilos para el contenedor de los dispositivos en el comparador*/
+#zona-comparador{
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5em auto 5em;
+}
+
+/*Contenedor de cada dispositivo*/
+.tarjeta-movil{
+    width: 18rem;
+    margin: auto;
+}
+
+.tarjeta-movil img{
+    width: 12rem;
+    min-height: 16rem;
+    margin-bottom: 1.2rem;
+}
+
+.tarjeta-movil h2{
+    font-size: 2em;    
+}
+
+.tarjeta-movil p{
+    font-size: 1.2rem;
+}
+
+/*Linea separadora entre parrafos*/
+.linea{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 85%;
+}
+
+/*Estilos para movil*/
+@media screen 
+and (min-device-width : 360px) 
+and (max-device-width: 431px) {
+    .imagen-principal{
+        width: 40vw;
+    }
+
+    h1{
+        width: 100%;
+    }
+    
+    #zona-comparador{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tarjeta-movil{
+        margin: 2rem auto 2rem;
+    }
+}
+/*Estilos unicos para tablet*/
+@media screen 
+and (min-device-width : 432px) 
+and (max-device-width: 900px) {
+    .imagen-principal{
+        width: 40vw;
+    }
+}

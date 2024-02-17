@@ -1,0 +1,78 @@
+/*Estilos para la pagina de index*/
+#general-index{
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-size: 3rem;
+}
+
+/*Estilos contenedor general para las imagenes y nombres*/
+#imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+#imagenes img{
+    border-radius: 5%;
+}
+
+#imagenes p{
+    position: absolute;
+    font-size: 2.6em;
+    font-weight: bold;
+    color: black;
+    margin: 2.4rem;
+}
+
+/*Estilos contenedor propio de la imagen del movil y el texto*/
+.imagenesmoviles{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+/*Contenedor apartado iPhone*/
+.lado-iphone{
+    justify-content: right;
+}
+
+.imagen-dispositivo{
+    width: 25vw;
+}
+
+/*Estilos para movil y tablet*/
+@media screen 
+and (min-device-width : 360px) 
+and (max-device-width : 900px) {
+    .imagen-principal{
+        max-width: 100%;
+        height: 15vh;
+    }
+
+    #imagenes{
+        max-width: 80%;
+        display: block;
+        margin: 4rem auto;
+    }
+
+    #imagenes p{
+        font-size: 1.5rem;
+        position: relative;
+        margin-top: auto;
+    }
+    
+    .imagenesmoviles{
+        display: block;
+    }
+
+    .imagen-dispositivo{
+        width: 40vw;
+    }
+}

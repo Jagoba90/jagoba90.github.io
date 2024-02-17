@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacta - Birt Mobile</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contacta.css">
+</head>
+<body>
+    <!--Cabecera comun para todas las paginas con los diferentes menús-->
+    <header id="cabecera">
+        <a href="index.html"><img src="images/logotipo.png" alt="Logotipo Birt" id="imagen-birt"></a>
+        <nav>
+            <ul id="lista-menus">
+                <li><a href="android.html" class="enlace-web">Android</a></li>
+                <li><a href="iphone.html" class="enlace-web">iPhone</a></li>
+                <li><a href="comparador.html" class="enlace-web">Comparador</a></li>
+                <li class="actual"><a href="contacta.html" class="enlace-web">Contactanos</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <a href="cesta.html">
+                <img src="images/cesta.png" alt="Carrito de la cesta" srcset="" id="carro-compra" class="icono">
+            </a>
+            <a href="#">
+                <img src="images/idioma.png" alt="Selector de idioma" srcset="" id="selector-idioma" class="icono">
+            </a>
+        </aside>
+    </header>
+    <!--Imagen principal de la pagina, frase de la pagina y parrafo de informacion-->
+    <section>
+        <img src="images/tienda.jpg" alt="imagen principal" srcset="" class="imagen-principal">
+        <h1 class="color-gris descrip">Tu tienda de moviles de confianza desde 2020</h1>
+    </section>
+    <p>www.BirtMobile.com - info@birtmobile.com</p>
+
+    <!--Formulario de contacto-->
+    <form action="get">
+        <input type="text" name="nombre" id="nombre" class="entrada" placeholder="Nombre">
+        <input type="text" name="apellidos" id="apellidos" class="entrada" placeholder="Apellidos">
+        <input type="email" name="email" id="email" class="entrada" placeholder="Email">
+        <textarea name="comentario" id="comentario" class="texto" placeholder="Escribe aqui tu comentario"></textarea>
+        <span>
+            <input type="checkbox" name="acepto" id="acepto" class="acepto"> 
+            <label for="acepto">acepto el aviso legal</label>
+            <input type="submit" name="enviar" id="enviar" class="enviar">
+        </span>
+    </form>
+
+    <!--Frase previa al footer-->
+    <section>
+        <h2 class="color-gris descrip">Cómo llegar</h2>
+    </section>
+    <!--footer-->
+    <footer id="footer-diferente"> 
+    <section id="contenedor-ubicacion">
+        <img src="images/mapa.jpg" alt="mapa donde estamos" srcset="" id="imagenfooter">
+        <div id="contenedor-informacion">
+            <h2>Transporte</h2>
+            <p><b>bus:</b>Lineas 01-20-26-56-62-77-A5-G1-G6</p>
+            <p><b>tren:</b>Astigarraga - Donostia: C1</p>
+            <h2>Edificio</h2>
+            <p><b>Direccion:</b> poligono marutene 20014 Donostia, Guipuzkoa</p>
+            <p><b>Telefono:</b> 945 567 953</p>
+        </div>
+    </section>
+        <div id="fin-pagina">
+            <ul id="lista-iconos">
+                <li><img src="images/tik-tok.png" alt="red tiktok" srcset="" class="icono-red-social"></li>
+                <li><img src="images/twitter.png" alt="red twitter" srcset="" class="icono-red-social"></li>
+                <li><img src="images/facebook.png" alt="red facebook" srcset="" class="icono-red-social"></li>
+                <li><img src="images/youtube.png" alt="red youtube" srcset="" class="icono-red-social"></li>
+                <li><img src="images/instagram.png" alt="red instagram" srcset="" class="icono-red-social"></li>
+            </ul>
+
+            <ul id="condiciones">
+                <a href="#" class="enlace-web"><li>privacidad</li></a>
+                <a href="#" class="enlace-web"><li>condiciones de venta</li></a>
+                <a href="#" class="enlace-web"><li>terminos del servicio</li></a>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

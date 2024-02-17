@@ -1,0 +1,123 @@
+/*  Estilos para la pagina de contactar
+    Los estilos de la imagen principal se encuentran en main.css
+*/
+h1{
+    margin-top: 2rem;
+}
+
+/*Parrafo con la web y el correo de la empresa*/
+p{    
+    margin: 3rem auto 1rem;
+}
+
+/*Estilos para el formulario y sus campos*/
+form{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #ededed;
+    border-radius: 1rem;
+    margin: 0rem auto 8rem;
+}
+
+.entrada{
+    width: 70%;
+    border-radius: 10rem;
+    padding: 0.2rem;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+/*Campo de texto del formulario*/
+.texto{
+    border: none;
+    height: 10rem;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+}
+
+/*Estilos del contenedor para el checkbox, label y boton enviar*/
+span{
+    display: flex;
+    margin-top: 0.8rem;
+    margin-left: 1rem;
+}
+
+span label{
+    width: 15%;
+}
+
+#enviar{
+    margin-left: auto;
+    width: 80%;
+    border-radius: 3rem;
+    border: none;
+    background-color: #586070;
+    color: white;
+}
+
+#enviar:hover{
+    background-color:  rgb(46, 78, 146);
+}
+
+/*Estilos Footer diferente de las otras paginas*/
+#footer-diferente{
+    width: 62vw;
+}
+
+/*estilos para el contenedor donde esta la imagen y los datos*/
+#contenedor-ubicacion{
+    display: flex;
+    border-bottom: 1px solid black;
+    margin-bottom: 1.5rem;
+}
+
+/*Foto de ubicacion*/
+#footer-diferente img{
+    width: 49%;
+    margin-bottom: 1rem;   
+}
+
+#contenedor-informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 49%;
+    font-size: 1.2em;
+}
+
+#contenedor-informacion h2{
+    width: 45%;
+    margin-top: 2rem;
+}
+
+/*Estilos para tablet y movil*/
+@media screen 
+and (min-device-width : 200px) 
+and (max-device-width: 900px) {
+    form{
+        width: 80%;
+    }
+
+    form label{
+        width: 30%;
+    }
+
+    #enviar{
+        width: 50%;
+    }
+
+    #contenedor-ubicacion{
+        display: block;
+    }
+    
+    #contenedor-ubicacion img{
+        width: 100%;
+    }
+
+    #contenedor-informacion {
+        width: 100%;
+        margin: auto;
+    }
+}

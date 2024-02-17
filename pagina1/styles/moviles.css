@@ -1,0 +1,129 @@
+/*Estilos para las paginas tanto de Android como de iPhone*/
+
+/*Estilos contenedor de los filtros por marca de movil*/
+#filtro{
+    width: 70%;
+    margin: 3em auto 3em;
+}
+
+#filtro ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#filtro ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Estilos contenedor general con los moviles en tarjetas*/
+#contenido-princ{
+    width: 78%;
+    border-top: 1px solid rgba(128, 128, 128, 0.37);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.37);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*Contenedor general para las tarjetas de los moviles*/
+.tarjeta{
+    background-color: #7c859b;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    height: fit-content;
+    margin: 0.62rem auto;
+    gap: 2rem;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+}
+
+/*Diferentes apartados de la tarjeta del movil*/
+.imagen-tarjeta{
+    max-width: 100%;
+    margin: auto;
+}
+
+.imagen-tarjeta img{
+    width: 100%;
+}
+
+.imagen-tarjeta img:hover{
+    opacity: 0.5;
+}
+
+.datos-tarjeta h2{
+    margin-bottom: 1.1rem;
+}
+
+.datos-tarjeta p{
+    text-align: left;
+    line-height: 2em;
+    font-size: 1.1rem;
+}
+
+/*Contenedor con los botones de comparar y comprar*/
+.datos-tarjeta span{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 1.2rem;
+}
+
+.datos-tarjeta span a{
+    width: 8.12rem;
+}
+
+.boton-pulsable{
+    border-radius: 20px;
+    background-color: #586070;
+    margin-bottom: 0.94rem;
+    text-decoration: none;
+    font-size: 1.62rem;
+    color: white;
+    padding: 2%;
+}
+
+.boton-pulsable:hover{
+    background-color: #6a7691;
+    color: #404757;
+    box-shadow: 3px 6px 10px rgb(110, 80, 82);
+}
+
+/*Estilos para movil y tablet*/
+@media screen 
+and (min-device-width : 360px) 
+and (max-device-width: 900px) {
+    #filtro ul{
+        display: block;
+    }
+
+    #contenido-princ{
+        display: block;
+    }
+    
+    .tarjeta{
+        display: block;
+        margin: 2rem auto 1rem;
+    }
+
+    .imagen-tarjeta img{
+        width: 25vw;
+    }
+
+    .boton-pulsable {
+        font-size: 1.4rem;
+    }
+}
+
+/*Estilos unicamente para tablet*/
+@media screen 
+and (min-device-width : 431px) 
+and (max-device-width: 900px) {
+    .imagen-tarjeta img{
+        width: 30vw;
+    }
+}
