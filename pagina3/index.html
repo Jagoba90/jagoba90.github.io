@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="https://kit.fontawesome.com/a5f5fe9703.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!--Barra superior-->
+        <header>
+            <div class="container-fluid overflow-hidden mb-4 mb-lg-0" >
+                <div class="row d-flex align-items-center">
+                    <!--Parte izquierda con el logo y el buscador-->
+                    <div class="
+                        col
+                        d-flex 
+                        align-items-center
+                    ">
+                        <a href="#"><img src="images/Logo_Birt.PNG" alt="" srcset="" class=""></a>
+                        <div class="d-flex">
+                            <i class="bi bi-search fs-4"></i>
+                            <!--si por lo que sea se descuadra algo, quitar el fw-bolder-->
+                            <input type="text" name="" id="" placeholder="Bilatu" class="rounded-pill border-0 p-2 form-control-sm fw-bolder w-100">
+                        </div>
+                    </div>
+
+                    <!--parte dentral para los iconos-->
+                    <div class="
+                        col
+                        d-flex 
+                        justify-content-around
+                        order-3
+                        order-lg-0
+                    ">
+                    
+                        <div class="col activo text-center fs-3 p-3 pintarfondo"><i class="bi bi-house-door-fill"></i></div>
+                        <div class="col text-center fs-3 p-3 rounded pintarfondo"><i class="bi bi-people"></i></div>
+                        <div class="col text-center fs-3 p-3 rounded pintarfondo"><i class="bi bi-collection-play"></i></div>
+                        <div class="col text-center fs-3 p-3 rounded pintarfondo"><i class="bi bi-shop "></i></div>
+                        <div class="col text-center fs-3 p-3 rounded pintarfondo"><i class="bi bi-upload "></i></div>
+                    </div>
+
+                    <!--parte derecha para 3 iconos, foto y nombre-->
+                    <div class="
+                        col
+                        d-flex 
+                        align-items-center 
+                        justify-content-sm-end
+                        justify-content-around
+                    ">
+                        <!--Si pongo menos margen y mas padding se separan lo necesario para el hover-->
+                        <i class="bi bi-grid-3x3-gap-fill fs-3 m-1 p-3 rounded-circle d-flex pintarfondo"></i>
+                        <i class="bi bi-messenger fs-3 m-1 p-3 rounded-circle d-flex pintarfondo"></i>
+                        <i class="bi bi-bell-fill fs-3 mx-2 p-3 rounded-circle d-flex pintarfondo"></i>
+                        
+                        <div class="bi p-0 p-lg-2 rounded-pill pintarfondo">
+                            <img src="images/persona1.jpg" class="rounded-circle" width="50" alt="" srcset="">
+                            <span>Gorka</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--contenido de la pagina-->
+        <main>
+            <div class="container-fluid" >
+                <div class="row">
+
+                    <!--contenido apartado izquierda-->
+                    <div class="col-3 mt-3 d-none d-sm-block" >
+                        <div class="ms-0 ms-lg-3 mb-2 pintarfondo p-2 rounded-pill d-flex d-lg-block align-items-center">
+                            <img src="images/persona1.jpg" alt="" srcset="" class="rounded-circle" width="60">
+                            <span class="color-letra fw-bold ms-3 ms-lg-0">Gorka Zengotita</span>
+                        </div>
+
+                        <ul class="list-unstyled ms-0 ms-lg-4">
+                            <li class="pintarfondo p-2 rounded-pill color-letra d-flex align-items-center mb-2"> <i class="bi bi-people fs-4 me-3"></i> Lagunak </li>
+                            <li class="pintarfondo p-2 rounded-pill color-letra d-flex align-items-center mb-2"> <i class="bi bi-flag fs-4 me-3"></i> Orrialdeak </li>
+                            <li class="pintarfondo p-2 rounded-pill color-letra d-flex align-items-center mb-2"> <i class="bi bi-collection fs-4 me-3"></i> Taldeak </li>
+                            <li class="pintarfondo p-2 rounded-pill color-letra d-flex align-items-center mb-2"> <i class="bi bi-bag fs-4 me-3"></i> Azoka </li>
+                            <li class="pintarfondo p-2 rounded-pill color-letra d-flex align-items-center mb-2"> <i class="bi bi-tv fs-4 me-3"></i> Watch </li>
+                            <li class="pintarfondo p-2 rounded-pill color-letra d-flex align-items-center mb-3"> <i class="bi bi-calendar-event fs-4 me-3"></i> Ekitaldiak </li>
+                        </ul>
+
+
+
+                        <div class="col-8 ms-2">
+                            <a href="#" class="enlace me-2">Pribatasuna</a>
+                            <a href="#" class="enlace me-2">Baldintzak</a>
+                            <a href="#" class="enlace me-2">Iragarkiak</a>
+                            <a href="#" class="enlace me-2 d-inline-block">Iragarkien hobespenak</a>
+                            <a href="#" class="enlace me-2">Cookieak</a>
+                            <a href="#" class="enlace me-2">Gehiago</a>
+                        </div>
+
+                    </div>
+                    <!--***************************************DIV PARA AJUSTAR EL DE LA IZQUIERDA****************************************-->
+                    <div class="col-1 d-none d-lg-block">
+                        
+                    </div>
+
+                    <!--contenido apartado centro-->
+                    <div class="col mt-2" >
+                        <!--Seccion para las historias-->
+                        <div class="col d-flex justify-content-between mx-1 gap-2 gap-lg-0">
+                            <!--primera historia-->
+                            <div class="historia w-25">
+                                <img src="images/persona1.jpg" alt="" srcset="" class="card-img-top rounded-top-3" style="min-height: 155px; object-fit: cover;">
+                                <!--Normal-->
+                                <span class="card-text  d-flex justify-content-center texto-historia rounded-bottom-3 d-none d-lg-flex" style="min-height: 25px;">Sortu berria</span>
+                                <!--Tablet-->
+                                <span class="card-text  d-flex justify-content-center texto-historia rounded-bottom-3 d-lg-none fw-bold" style="min-height: 25px;">Sortu</span>
+                            </div>
+
+                            <!--Segunda historia-->
+                            <div class="historia position-relative w-25">
+                                <!--Div para el hover de las historias-->
+                                <div class="position-absolute encima ">
+                                    <i class="bi bi-play fs-3 hasi">HASI</i>
+                                </div>
+                                <img src="images/paisaje2.jpg" alt="" srcset="" class="card-img-top rounded-3" style="min-height: 180px; object-fit: cover;">
+                                <div class="card-img-overlay d-flex justify-content-end align-items-end z-2">
+                                    <span class="d-flex rounded-circle p-1" style="border: 1px solid white;">
+                                        <img src="images/persona2.jpg" alt="" srcset="" class="rounded-circle" width="50">
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!--tercera historia-->
+                            <div class="historia position-relative w-25">
+                                <!--Div para el hover de las historias-->
+                                <div class="position-absolute encima">
+                                    <i class="bi bi-play fs-3 hasi">HASI</i>
+                                </div>
+                                <img src="images/paisaje1.jpg" alt="" srcset="" class="card-img-top rounded-3" style="min-height: 180px; object-fit: cover;">
+                                <div class="card-img-overlay d-flex justify-content-end align-items-end z-2">
+                                    <span class="d-flex rounded-circle p-1" style="border: 1px solid white;">
+                                        <img src="images/persona3.jpg" alt="" srcset="" class="rounded-circle" width="50">
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!--cuarta historia-->
+                            <div class="historia position-relative w-25">
+                                <!--Div para el hover de las historias-->
+                                <div class="position-absolute encima">
+                                    <i class="bi bi-play fs-3 hasi">HASI</i>
+                                </div>
+                                <img src="images/ad1.jpg" alt="" srcset="" class="card-img-top rounded-3" style="min-height: 180px; object-fit: cover;">
+                                <div class="card-img-overlay d-flex justify-content-end align-items-end z-2">
+                                    <span class="d-flex rounded-circle p-1" style="border: 1px solid white;">
+                                        <img src="images/persona4.jpg" alt="" srcset="" class="rounded-circle" width="50">
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!--Seccion para "nueva publicacion" con input y demas-->
+                        <div class="mt-3 bordes-centro rounded">
+                            <div class="d-flex justify-content-between align-items-center p-3 bordeabajo mx-3">
+                                <img src="images/persona1.jpg" alt="" srcset="" class="rounded-circle" width="65">
+                                <input type="text" name="" id="" placeholder="Zer darabilzu gogoan, Gorka?" class="col-9 rounded-pill border-0 fw-bold p-2">
+                            </div>
+                            
+                            <!--los 2 iconos para video o foto-->
+                            <div class="d-flex justify-content-around p-4">
+                                <div class="d-flex align-items-center justify-content-center hovermedio rounded w-50 p-2">
+                                    <i class="bi bi-camera-video fs-2"></i>
+                                    <span class="mx-2 color-letra d-none d-lg-block">Zuzeneko bideoa</span>
+                                </div>
+
+                                <div class="d-flex align-items-center justify-content-center hovermedio rounded w-50 p-2">
+                                    <i class="bi bi-images fs-2"></i>
+                                    <span class="mx-2 color-letra d-none d-lg-block">Argazkiak</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--diferentes post de la gente-->
+                        <!--post 1-->
+                        <div class="bordes-centro p-3 mt-4 rounded">
+                            <!--Foto, nombre y apellido y Ordu1-->
+                            <div class="d-flex mb-1">
+                                <div class="">
+                                    <img src="images/persona3.jpg" alt="" srcset="" class="rounded-circle" width="65">
+                                </div>
+                                <div class="d-block mx-3">
+                                    <span class="d-block letra fw-bold subrayar">Jaione Perez</span>
+                                    <span class="d-block letra subrayar">Ordu 1</span>
+                                </div>
+                            </div>
+
+                            <!--Titulo y foto-->
+                            <div class="">
+                                <p class="letra">Lorem ipsum dolor sit amet.</p>
+                                <img src="images/paisaje1.jpg" alt="" srcset="" class="w-100 foto">
+                            </div>
+
+                            <!--Contador de likes y comentarios-->
+                            <div class="d-flex justify-content-between my-2 mx-2">
+                                <i class="bi bi-hand-thumbs-up-fill reaccion rounded-pill d-flex justify-content-center align-items-center p-2"><span class="mx-2">60</span></i>
+                                <span class="letra d-flex justify-content-center align-items-center p-2 reaccion rounded-pill">7 iruzkin</span>
+                            </div>
+
+                            <!--Boton de like y de comentario-->
+                            <div class="d-flex justify-content-around col gap-3 ">
+                                <button type="button" class="p-3 col border-0 letra fondoboton hovermedio"><i class="bi bi-hand-thumbs-up mx-3"></i><span class="d-none d-lg-inline-block">Astegin dut</span></button>
+                                <button type="button" class="p-3 col border-0 letra fondoboton hovermedio"><i class="bi bi-chat mx-3"></i><span class="d-none d-lg-inline-block">Iruzkindu</span></button>
+                            </div>
+                        </div>
+
+                        <!--post 2-->
+                        <div class="bordes-centro p-3 mt-4 rounded">
+                            <!--Foto, nombre y apellido y Ordu1-->
+                            <div class="d-flex mb-1">
+                                <div class="">
+                                    <img src="images/persona2.jpg" alt="" srcset="" class="rounded-circle" width="65">
+                                </div>
+                                <div class="d-block mx-3 ">
+                                    <span class="d-block letra fw-bold subrayar">Iker Arana</span>
+                                    <span class="d-block letra subrayar">2 Ordu</span>
+                                </div>
+                            </div>
+
+                            <!--Titulo y foto-->
+                            <div class="">
+                                <p class="letra">Lorem ipsum dolor sit amet.</p>
+                                <img src="images/paisaje2.jpg" alt="" srcset="" class="w-100 foto">
+                            </div>
+
+                            <!--Contador de likes y comentarios-->
+                            <div class="d-flex justify-content-between my-2 mx-2">
+                                <i class="bi bi-hand-thumbs-up-fill reaccion rounded-pill d-flex justify-content-center align-items-center p-2"><span class="mx-2">75</span></i>
+                                <span class="letra d-flex justify-content-center align-items-center p-2 reaccion rounded-pill">3 iruzkin</span>
+                            </div>
+
+                            <!--Boton de like y de comentario-->
+                            <div class="d-flex justify-content-around col gap-3">
+                                <button type="button" class="p-3 col border-0 letra fondoboton hovermedio"><i class="bi bi-hand-thumbs-up mx-3"></i><span class="d-none d-lg-inline-block">Astegin dut</span></button>
+                                <button type="button" class="p-3 col border-0 letra fondoboton hovermedio"><i class="bi bi-chat mx-3"></i><span class="d-none d-lg-inline-block">Iruzkindu</span></button>
+                            </div>
+                        </div>
+
+                        <!--Div para meter espacio abajo-->
+                        <div class="my-5" style="height: 300px;"></div>
+
+                    </div>
+
+                    <!--***************************************DIV PARA AJUSTAR EL DE LA DERECHA****************************************-->
+                    <div class="col-1 d-none d-lg-block">
+
+                    </div>
+
+                    <!--contenido apartado derecha-->
+                    <div class="col-3 d-none d-sm-block" >
+                        <!--Kontaktuak-->
+                        <div class="col p-2 m-auto mb-3">
+                            <span class="fw-bold letra fs-5">Kontaktuak</span>
+
+                            <div class="d-flex align-items-center mt-3 ms-3 rounded-pill pintarfondo ">
+                                <img src="images/persona2.jpg" alt="" class="rounded-circle contacto" width="50">
+                                <span class="letra mx-3">Iker Arana</span>
+                            </div>
+
+                            <div class="d-flex align-items-center mt-3 ms-3 rounded-pill pintarfondo ">
+                                <img src="images/persona3.jpg" alt="" class="rounded-circle contacto" width="50">
+                                <span class="letra mx-3">Jaione Perez</span>
+                            </div>
+
+                            <div class="d-flex align-items-center mt-3 ms-3 rounded-pill pintarfondo ">
+                                <img src="images/persona4.jpg" alt="" class="rounded-circle contacto" width="50">
+                                <span class="letra mx-3">Mikel Ardanza</span>
+                            </div>
+
+                            <div class="d-flex align-items-center mt-3 ms-3 rounded-pill pintarfondo ">
+                                <img src="images/persona5.jpg" alt="" class="rounded-circle contacto" width="50">
+                                <span class="letra mx-3">Itziar Gortazar</span>
+                            </div>
+                        </div>
+
+                        <!--taldeak-->
+                        <div class="p-2 m-auto col mb-3">
+                            <span class="fw-bold letra fs-5">Taldeak</span>
+
+                            <div class="d-flex align-items-center mt-3 ms-3 rounded-pill pintarfondo">
+                                <img src="images/DAM.png" alt="" class="rounded-circle contacto" width="50">
+                                <span class="letra mx-3">DAM</span>
+                            </div>
+
+                            <div class="d-flex align-items-center mt-3 ms-3 rounded-pill pintarfondo">
+                                <img src="images/DAW.png" alt="" class="rounded-circle contacto" width="50">
+                                <span class="letra mx-3">DAW</span>
+                            </div>
+                        </div>
+
+
+                        <div class="p-2 m-auto col mb-3">
+                            <span class="fw-bold letra fs-5">Basbestua</span>
+                            <img src="images/ad2.jpg" alt="" srcset="" class="img-fluid mt-3">
+                            
+                        </div>
+
+                        <!--Div para el nombre Basbestua-->
+                        <!-- <div class="p-2 m-auto col">
+                            <span class="fw-bold letra fs-5">Basbestua</span>
+                        </div> -->
+                        <!--Div para poner la imagen-->
+                        <!-- <div class="d-flex justify-content-end">
+                            <img src="images/ad2.jpg" alt="" srcset="" class="img-fluid w-75">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

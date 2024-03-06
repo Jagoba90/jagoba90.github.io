@@ -1,0 +1,140 @@
+@use 'colors' as *;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    background-color: $secundario;
+    outline-color: $principal;
+    color: $principal;
+    
+    &::placeholder{
+        color: $principal;
+    }
+}
+
+.bi{
+    color: $principal;
+}
+
+.pintarfondo{
+    width: fit-content;
+}
+
+.pintarfondo:hover{
+        background-color: $principal;
+        width: fit-content;
+        color: white;
+        cursor: pointer;
+    i, span{
+        color: white;
+    }
+
+    .contacto{
+        border-color: $secundario;
+    }
+}
+
+.activo{
+    border-bottom: 4px solid $principal;
+}
+
+.color-letra{
+    color: $principal;
+
+    &:hover{
+        color: white;
+    }
+}
+
+.enlace{
+    text-decoration: none;
+    color: $principal;
+    font-size: 14px;
+
+    &:hover{
+        font-weight: bold;
+    }
+}
+
+.historia{
+    max-width: 7em;
+    height: 180px;
+
+    &:hover{
+        cursor: pointer;
+        .encima{
+            opacity: 1;
+            background: linear-gradient(180deg, rgba(0,0,0, .1) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0, .0) 100%);
+        }
+    }
+
+}
+
+.hasi{
+    color: white;
+}
+
+.encima{
+    opacity: 0.0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+
+.texto-historia{
+    background-color: $secundario;
+    color: $principal;
+    &:hover{
+        font-weight: bold;
+    }
+}
+
+.bordeabajo{
+    border-bottom: 1px solid $secundario;
+}
+
+.bordes-centro{
+    border: 3px solid $secundario;
+}
+
+.letra{
+    color: $principal;
+}
+
+.fondoboton{
+    background-color: $secundario;
+    &:hover{
+        color: white;
+    }
+}
+
+.contacto{
+    border: 2px solid $principal;
+}
+
+.hovermedio:hover{
+    background-color: $principal;
+    cursor: pointer;
+    i, span{
+        color:white;
+    }
+}
+
+.subrayar:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.foto{
+    cursor: pointer;
+}
+
+.reaccion:hover{
+    background-color: $principal;
+    color: white;
+    cursor: pointer;
+}

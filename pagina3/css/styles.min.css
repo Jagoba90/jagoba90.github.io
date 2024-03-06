@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  background-color: rgb(176, 224, 230);
+  outline-color: rgb(0, 154, 183);
+  color: rgb(0, 154, 183);
+}
+input::-moz-placeholder {
+  color: rgb(0, 154, 183);
+}
+input::placeholder {
+  color: rgb(0, 154, 183);
+}
+
+.bi {
+  color: rgb(0, 154, 183);
+}
+
+.pintarfondo {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.pintarfondo:hover {
+  background-color: rgb(0, 154, 183);
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  cursor: pointer;
+}
+.pintarfondo:hover i, .pintarfondo:hover span {
+  color: white;
+}
+.pintarfondo:hover .contacto {
+  border-color: rgb(176, 224, 230);
+}
+
+.activo {
+  border-bottom: 4px solid rgb(0, 154, 183);
+}
+
+.color-letra {
+  color: rgb(0, 154, 183);
+}
+.color-letra:hover {
+  color: white;
+}
+
+.enlace {
+  text-decoration: none;
+  color: rgb(0, 154, 183);
+  font-size: 14px;
+}
+.enlace:hover {
+  font-weight: bold;
+}
+
+.historia {
+  max-width: 7em;
+  height: 180px;
+}
+.historia:hover {
+  cursor: pointer;
+}
+.historia:hover .encima {
+  opacity: 1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.hasi {
+  color: white;
+}
+
+.encima {
+  opacity: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.texto-historia {
+  background-color: rgb(176, 224, 230);
+  color: rgb(0, 154, 183);
+}
+.texto-historia:hover {
+  font-weight: bold;
+}
+
+.bordeabajo {
+  border-bottom: 1px solid rgb(176, 224, 230);
+}
+
+.bordes-centro {
+  border: 3px solid rgb(176, 224, 230);
+}
+
+.letra {
+  color: rgb(0, 154, 183);
+}
+
+.fondoboton {
+  background-color: rgb(176, 224, 230);
+}
+.fondoboton:hover {
+  color: white;
+}
+
+.contacto {
+  border: 2px solid rgb(0, 154, 183);
+}
+
+.hovermedio:hover {
+  background-color: rgb(0, 154, 183);
+  cursor: pointer;
+}
+.hovermedio:hover i, .hovermedio:hover span {
+  color: white;
+}
+
+.subrayar:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.foto {
+  cursor: pointer;
+}
+
+.reaccion:hover {
+  background-color: rgb(0, 154, 183);
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.min.css.map */
